@@ -10,10 +10,6 @@ app.use(bodyParser.urlencoded({
     extended: false
 }))
 
-app.get('/', function(req, res) {
-  res.send()
-})
-
 app.use(bodyParser.json())
 
 app.listen(port, () => console.log('Example app listening on port ' + port))
