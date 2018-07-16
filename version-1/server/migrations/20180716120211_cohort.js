@@ -1,6 +1,6 @@
 
 exports.up = function(knex) {
-  return knex.schema,createTable('cohort', (table) => {
+  return knex.schema.createTable('cohort', (table) => {
     table.increments();
     table.string('cohortName');
     table.string('cohortCode');

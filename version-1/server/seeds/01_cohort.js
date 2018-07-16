@@ -11,6 +11,6 @@ exports.seed = function(knex, Promise) {
         {id: 4, cohortName: '17-03-WD-BD', cohortCode: 'g110', numberOfStudents: '29'}
       ]);
     }).then(() => {
-        return knex.raw("ALTER SEQUENCE resolution_id_seq RESTART WITH 5;");
+        return knex.raw("ALTER SEQUENCE cohort_id_seq RESTART WITH 5;");
     });
 };
